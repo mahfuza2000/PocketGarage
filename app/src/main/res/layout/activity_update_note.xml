@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateVehicleActivity">
+
+    <TextView
+        android:id="@+id/editNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Edit Vehicle"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        />
+
+    <ImageView
+        android:id="@+id/updateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/editNoteHeading"
+        android:layout_marginEnd="6dp"
+        />
+
+
+    <EditText
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Make"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/editNoteHeading"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/updateModelText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Model"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateTitleEditText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/updateYearText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Year"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateModelText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/updateColorText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Color"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateYearText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/updateLicenseText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="License Plate"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateColorText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/updateVinText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="VIN"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateLicenseText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/updateMileageText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Mileage"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateVinText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        />
+
+<!--    <EditText
+        android:id="@+id/updateContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter Description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/updateTitleEditText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="12dp"
+        />-->
+
+</RelativeLayout>
