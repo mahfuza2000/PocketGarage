@@ -210,36 +210,5 @@
         android:focusable="false"
         android:onClick="showDatePicker" />
 
-    <!--
-        <EditText
-            android:id="@+id/lastOilChange"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:hint="Last Oil Change"
-            android:padding="8dp"
-            android:textSize="16sp"
-            android:layout_below="@+id/mileageText"
-            android:background="@drawable/orange_border"
-            android:layout_marginTop="16dp"
-            android:maxLines="1"
-            android:inputType="date" />
-    -->
-
-
-<!--    <EditText
-        android:id="@+id/contentEditText"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:hint="Enter Description"
-        android:gravity="top"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:layout_below="@+id/titleEditText"
-        android:background="@drawable/orange_border"
-        android:layout_marginTop="12dp"
-        />
-    -->
-
-
 
 </RelativeLayout>

@@ -26,7 +26,6 @@ class VehiclesDatabaseHelper (context: Context) :
         private const val COLUMN_LAST_BRAKE_INSPECTION = "lastBrakeInspection"
         private const val COLUMN_LAST_TIRE_ROTATION = "lastTireRotation"
         private const val COLUMN_LAST_ANNUAL_INSPECTION = "lastAnnualInspection"
-        /*private const val COLUMN_IS_EXPANDED = "isExpanded"*/
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
@@ -45,7 +44,6 @@ class VehiclesDatabaseHelper (context: Context) :
                 "$COLUMN_LAST_BRAKE_INSPECTION TEXT, " +
                 "$COLUMN_LAST_TIRE_ROTATION TEXT, " +
                 "$COLUMN_LAST_ANNUAL_INSPECTION TEXT )"
-                /*"$COLUMN_IS_EXPANDED INTEGER DEFAULT 0)"*/
         db?.execSQL(createTableQuery)
     }
 
@@ -73,7 +71,6 @@ class VehiclesDatabaseHelper (context: Context) :
             put(COLUMN_LAST_BRAKE_INSPECTION, vehicle.lastBrakeInspection)
             put(COLUMN_LAST_TIRE_ROTATION, vehicle.lastTireRotation)
             put(COLUMN_LAST_ANNUAL_INSPECTION, vehicle.lastAnnualInspection)
-            /*put(COLUMN_IS_EXPANDED, if (vehicle.isExpanded) 1 else 0)*/
         }
         db.insert(TABLE_NAME, null, values)
         db.close()
@@ -100,7 +97,6 @@ class VehiclesDatabaseHelper (context: Context) :
             val lastBrakeInspection = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LAST_BRAKE_INSPECTION))
             val lastTireRotation = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LAST_TIRE_ROTATION))
             val lastAnnualInspection = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LAST_ANNUAL_INSPECTION))
-            /*val isExpanded = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_IS_EXPANDED)) == 1*/
 
             val vehicle = Vehicle(
                 id, make, model, year, color, license, vin, mileage, lastOilChange,
@@ -129,7 +125,6 @@ class VehiclesDatabaseHelper (context: Context) :
             put(COLUMN_LAST_BRAKE_INSPECTION, vehicle.lastBrakeInspection)
             put(COLUMN_LAST_TIRE_ROTATION, vehicle.lastTireRotation)
             put(COLUMN_LAST_ANNUAL_INSPECTION, vehicle.lastAnnualInspection)
-            /*put(COLUMN_IS_EXPANDED, if (vehicle.isExpanded) 1 else 0)*/
         }
         val whereClause = "$COLUMN_ID = ?"
         val whereArgs = arrayOf(vehicle.id.toString())
@@ -157,7 +152,6 @@ class VehiclesDatabaseHelper (context: Context) :
         val lastBrakeInspection = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LAST_BRAKE_INSPECTION))
         val lastTireRotation = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LAST_TIRE_ROTATION))
         val lastAnnualInspection = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LAST_ANNUAL_INSPECTION))
-        /*val isExpanded = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_IS_EXPANDED)) == 1*/
 
         cursor.close()
         db.close()
