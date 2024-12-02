@@ -99,7 +99,7 @@
         android:id="@+id/updateVinText"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:hint="VIN"
+        android:hint="VIN (Vehicle Identification Number)"
         android:padding="8dp"
         android:textSize="16sp"
         android:layout_below="@+id/updateLicenseText"
@@ -120,6 +120,95 @@
         android:layout_marginTop="16dp"
         android:maxLines="1"
         />
+
+    <EditText
+        android:id="@+id/updateLastOilChange"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Oil Change"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateMileageText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+    <EditText
+        android:id="@+id/updateLastATFChange"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Automatic Transmission Fluid Change"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateLastOilChange"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/updateLastAirFilterChange"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Air Filter Change"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateLastATFChange"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/updateLastBrakeInspection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Brake Inspection"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateLastAirFilterChange"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/updateLastTireRotation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Tire Rotation"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateLastBrakeInspection"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/updateLastAnnualInspection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Annual Inspection"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateLastTireRotation"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
 
 <!--    <EditText
         android:id="@+id/updateContentEditText"

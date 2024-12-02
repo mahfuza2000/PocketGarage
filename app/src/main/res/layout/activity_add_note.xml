@@ -98,7 +98,7 @@
         android:id="@+id/vinText"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:hint="VIN"
+        android:hint="VIN (Vehicle Identification Number)"
         android:padding="8dp"
         android:textSize="16sp"
         android:layout_below="@+id/licenseText"
@@ -119,6 +119,111 @@
         android:layout_marginTop="16dp"
         android:maxLines="1"
         />
+
+    <EditText
+        android:id="@+id/lastOilChange"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Oil Change"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/mileageText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/lastATFChange"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Automatic Transmission Fluid Change"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/lastOilChange"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/lastAirFilterChange"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Air Filter Change"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/lastATFChange"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/lastBrakeInspection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Brake Inspection"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/lastAirFilterChange"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/lastTireRotation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Tire Rotation"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/lastBrakeInspection"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/lastAnnualInspection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Last Annual Inspection"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/lastTireRotation"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePicker" />
+
+    <!--
+        <EditText
+            android:id="@+id/lastOilChange"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Last Oil Change"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/mileageText"
+            android:background="@drawable/orange_border"
+            android:layout_marginTop="16dp"
+            android:maxLines="1"
+            android:inputType="date" />
+    -->
 
 
 <!--    <EditText
